@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "font-awesome": "^4.6.3"
+    "font-awesome": "^4.6.3",
+    "angular-bootstrap-calendar": "^0.22.0",
+    "moment": "^2.14.1"
   }
 }
