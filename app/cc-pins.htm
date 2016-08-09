@@ -1,0 +1,46 @@
+<div class="container pins" id="Pin"  ng-controller="PinCtrl">
+        <div class="row">
+             <div class="col-md-3 " ng-repeat="pin in pins">
+              <div class="pinc">
+               <h4 class="pin-title" id="MovieTitle" ng-model="pin.pinTitle"><center>{{pin.pinTitle}}</center> </h4>
+                   <div class="pin-image" >
+                     <img id="PinImage" ng-src='{{pin.imgSource}}'></img>
+                   </div>
+                     
+                      <div class="pin-ratings" >
+                          <div class="ratec"> 
+                        <div class="row" id="RatingNo">
+                        <div class="col-md-3 " ng-repeat="rate in pin.pinRatings">
+                         
+                         <img id="RateImage" style="width:50px;height:50px;" ng-src='{{rate.rateURL}}'>
+                         <span class="rate-no"> {{rate.rating}}</span></img>
+                         
+                        </div>
+                        </div>
+                        </div> <!-- Rating No. Row-->
+                         
+                       
+                        </div>  <!-- Pin Rating -->
+
+                           <div class="pin-boxoffice">
+                             <h4 class="box-heading" ><strong>Box Office</strong>
+                             </h4> <span class="pinbo"> {{pin.boxOffice}}</span> 
+                            </div>
+
+                              <div class="pin-summary">
+                                
+                                <span class="summary"> {{pin.pinSummary}} </span>
+                              
+                              </div>
+
+                                <div class="pin-button">
+                                   <a  href="#"> <button class="pinbutlink" type="button" id="movie-button" >Click Here!</button></a>
+                                </div>
+
+                              </div> <!-- Pinc Div-->
+
+            </div> <!-- col-sm-3 -->
+
+
+        </div> <!--  Row-->
+    </div> <!-- Container-->

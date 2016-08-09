@@ -1,0 +1,28 @@
+ <div class="container news" ng-controller="NewsCtrl"> <!-- News -->
+  <div class="row"> 
+    <div class="col-md-2" ng-repeat="new in news">
+        <div class="newsc">
+        <div class="news-heading">
+           <a class="newsheading"> <span class="newsheadings">{{new.newsTitle}}
+           </span> </a>
+        </div> <!--Heading-->
+       <div class="news-image">
+          <img class="img-rounded newsimage" ng-src='{{new.imgSource}}'></img>
+      </div> <!--Image-->
+      <p class="news-source text-right"> <em> {{new.newsSource}} </em> </p>
+       <div class="news-description">
+        <span="newsdescription" > {{new.newsDesc}} </span>
+    
+        </div> <!-- News Description -->
+
+        <div class="news-button">
+            <a  href="#"> <button class="newsbutlink" type="button" id="movie-button" >more</button></a>
+          </div> <!-- Button -->
+<!--GIT Branch comment -->
+
+     </div> <!-- Newsc -->
+    </div> <!-- Col -->
+
+
+  </div> <!--Row -->
+ </div> <!-- News Container -->
