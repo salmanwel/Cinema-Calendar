@@ -74,6 +74,15 @@ body {
 
 }
 
+.navbar-right{
+  margin-top: 10px;
+
+}
+
+.social{
+  margin-left: 5px;
+}
+
 
 @media(min-width:768px) {
     
@@ -321,4 +330,9 @@ background-color: #5c2723;
 
 a{
   cursor: pointer;
+}
+
+.meme-img{
+  width:250px;height:320px;
+
 }
